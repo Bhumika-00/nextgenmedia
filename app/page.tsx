@@ -16,9 +16,9 @@ export default function HomePage() {
           transition={{ duration: 0.8 }}
           className="text-5xl md:text-6xl font-extrabold tracking-tight leading-tight bg-gradient-to-r from-pink-500 via-purple-500 to-indigo-500 text-transparent bg-clip-text"
         >
-          Where Your Media Doesn't Shrink —
+          Where Your Media Does not Shrink — 
           <br className="hidden sm:block" />
-          It **Glows Up** ✨
+          It <strong className="text-pink-400">Glows Up</strong> ✨
         </motion.h1>
 
         <motion.p

@@ -12,6 +12,7 @@ import {
   UploadIcon,
   ImageIcon,
 } from "lucide-react";
+import Image from "next/image"; // Import Image from next/image
 
 const sidebarItems = [
   { href: "/home", icon: LayoutDashboardIcon, label: "Home Page" },
@@ -62,7 +63,7 @@ export default function AppLayout({
             <div className="flex-1">
               <Link href="/" onClick={handleLogoClick}>
                 <div className="btn btn-ghost normal-case text-2xl font-bold tracking-tight cursor-pointer">
-                NextGenMedia
+                  NextGenMedia
                 </div>
               </Link>
             </div>
@@ -71,11 +72,13 @@ export default function AppLayout({
                 <>
                   <div className="avatar">
                     <div className="w-8 h-8 rounded-full">
-                      <img
-                        src={user.imageUrl}
-                        alt={
-                          user.username || user.emailAddresses[0].emailAddress
-                        }
+                      {/* Use Next.js Image component here */}
+                      <Image
+                        src={user.imageUrl || "/default-avatar.jpg"} // Fallback image if no image URL
+                        alt={user.username || user.emailAddresses[0].emailAddress}
+                        width={32}  // Adjust the width
+                        height={32} // Adjust the height
+                        className="rounded-full"
                       />
                     </div>
                   </div>
@@ -93,6 +96,7 @@ export default function AppLayout({
             </div>
           </div>
         </header>
+
         {/* Page content */}
         <main className="flex-grow">
           <div className="max-w-7xl mx-auto w-full px-4 sm:px-6 lg:px-8 my-8">
@@ -100,6 +104,8 @@ export default function AppLayout({
           </div>
         </main>
       </div>
+
+      {/* Sidebar */}
       <div className="drawer-side">
         <label htmlFor="sidebar-drawer" className="drawer-overlay"></label>
         <aside className="bg-base-200 w-64 h-full flex flex-col">
@@ -124,6 +130,7 @@ export default function AppLayout({
               </li>
             ))}
           </ul>
+
           {user && (
             <div className="p-4">
               <button
