@@ -48,21 +48,12 @@ Deploy your NextGenMedia app in minutes with **Vercel**!
 - **Frontend**: Next.js, Tailwind CSS, Clerk (for authentication)
 - **Backend**: Node.js (API routes)
 - **Database**: Prisma (for ORM), PostgreSQL (for data storage)
-- **Deployment**: Vercel (for frontend), Clerk (for auth)
 
-### 💬 Join the Community
-
-Let’s get social! 💬
-
-- **Twitter**: [@nextgenmedia](https://twitter.com/nextgenmedia)
-- **Discord**: [Join our server](https://discord.gg/nextgenmedia)
 
 ### 📝 License
 
 MIT License. See [LICENSE](LICENSE) for more details.
 
 ---
-
-Built with 💙 by [Your Name] - [your-website.com](https://your-website.com)
 
 ✨ Let's make the internet a better place with **NextGenMedia**! ✨
