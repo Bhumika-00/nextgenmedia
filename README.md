@@ -56,4 +56,4 @@ MIT License. See [LICENSE](LICENSE) for more details.
 
 ---
 
-✨ Let's make the internet a better place with **NextGenMedia**! ✨
+✨Let's make the internet a better place with **NextGenMedia**!✨
